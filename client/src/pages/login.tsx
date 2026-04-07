@@ -1,10 +1,10 @@
 import { useState, useEffect } from "react";
 import gsap from "gsap";
 import { useForm } from "react-hook-form";
-import EmailIcon from "../assets/svgs/email";
-import PasswordIcon from "../assets/svgs/password";
-import PasswordShow from "../assets/svgs/passwordShow";
-import ShowPassword from "../assets/svgs/showPassword.jsx";
+import EmailIcon from "../assets/svgs/email.js";
+import PasswordIcon from "../assets/svgs/password.js";
+import PasswordShow from "../assets/svgs/passwordShow.js";
+import ShowPassword from "../assets/svgs/showPassword.js";
 import axios from "axios";
 import { useDispatch } from "react-redux"
 import { setUserProfile } from "../context/userFormSlice.js";
