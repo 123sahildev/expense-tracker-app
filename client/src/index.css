@@ -1,14 +1,23 @@
 @import "tailwindcss";
 
 
+
 @theme {
   --breakpoint-*: initial;
   --breakpoint-ms: 350px;
   --breakpoint-mm: 390px;
   --breakpoint-ml: 410px;
   --breakpoint-mxl: 430px;
+  --breakpoint-ts: 700px;
   --breakpoint-ls: 1200px;
   --breakpoint-lm: 1400px;
   --breakpoint-ll: 1500px;
   --breakpoint-lxl: 1750px;
+}
+
+
+@layer utilities {
+  .navShadow {
+    box-shadow: 0px 2px 40px 5px #22222252 ;
+  }
 }

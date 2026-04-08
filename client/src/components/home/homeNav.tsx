@@ -1,4 +1,6 @@
-import { useState, useEffect } from "react"
+import { useState, useEffect } from "react";
+import navClose from "../../assets/svgs/navClose.svg";
+import { Link } from "react-router-dom"
 
 type Props = {
     setDropDown: (value: boolean) => void;
@@ -8,14 +10,20 @@ export default function homeNav({ setDropDown }: Props) {
     const [isSlide, setSlideElement] = useState<boolean>(false);
 
     useEffect(() => {
-        setSlideElement(true)
+        setSlideElement(true);
 
     }, []);
 
   return (
-    <div className={`w-screen absolute top-0 left-0 h-auto text-center py-5 pl-5 bg-[grey] flex ${isSlide ? "translate-x-0" : "translate-x-96"}`}>
-        <button onClick={() => setDropDown(false)}>close</button>
-      chal raha hai
+    <div className={` navShadow h-max max-w-screen min-w-screen absolute  z-50 flex flex-col py-5 bg-[#ffff] `}>
+        <button className="absolute top-2 right-2 p-2 w-fit rounded-full active:bg-[#36363617]" onClick={() => setDropDown(false)}>
+          <img className="h-4" src={navClose} alt="" />
+        </button>
+        <p className="border-b border-[#696969aa] w-full ml-2 text-[24px] font-[Arial] text-justify mt-3">Dashboard</p>
+        <p className="border-b border-[#696969aa] divide-black w-full ml-2 text-[24px] font-[Arial] text-justify mt-3">Contact us</p>
+        <Link to={"/register"} className="ml-3" >
+          <button className=" active:bg-[#43157e] duration-250 w-38 mt-6 py-1 text-[18px] text-white  cursor-pointer bg-[#330075] ">Login</button>
+        </Link>
     </div>
-  )
+  );
 }
