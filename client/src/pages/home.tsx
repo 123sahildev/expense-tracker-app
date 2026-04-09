@@ -5,14 +5,19 @@ import NavDropDown from "../components/home/homeNav.tsx";
 
 export default function home() {
   const [isNavBar, setNavBar] = useState<boolean>(false);
+  const [isLand, setPage] = useState<boolean>(false);
+
+  useEffect(() =>  {
+    setPage(true);
+  }, []);
     
   return (
     <>
       <div className="absolute top-0 w-screen h-auto ">
-        <div className=" flex w-screen relative h-screen  bg-center bg-cover bg-no-repeat to-[white] from-[purple]" style={{ backgroundImage: "url('./hero.svg')"}} >
+        <div className=" flex overflow-x-hidden w-screen relative h-screen  bg-center bg-cover bg-no-repeat to-[white] from-[purple]" style={{ backgroundImage: "url('./hero.svg')"}} >
           <Header setDropDown={setNavBar}/>
         
-          <div className="flex w-fit  ls:ml-[calc(100vw-90vw)] mx-auto relative flex-col top-[calc(100vh-80vh)] ">
+          <div className={`flex w-fit ls:ml-[calc(100vw-90vw)] mx-auto relative flex-col top-[calc(100vh-70vh)] ${isLand ? "translate-y-0 opacity-100" : "translate-y-15 opacity-0"} duration-1500 `}>
               <h1 className="leading-tight ls:w-100 px-5 w-80 font-[system-ui] ls:mx-0 max-h-fit duration-300 font-bold text-[35px] ls:text-[45px]">Expense tracking made easy</h1>
               <p className="font-[Arial] text-[22px] px-5  w-85 ls:w-150 mt-5">Tracking your spending, organize your expenses, 
                 and gain clear insights into your financial 
@@ -26,8 +31,6 @@ export default function home() {
         
       </div>
       {isNavBar && <NavDropDown  setDropDown={setNavBar}/>}
-
     </>
-    
   )
 }
