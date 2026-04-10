@@ -24,7 +24,7 @@ export default function home() {
                 and gain clear insights into your financial 
                 habits - all in onse place.</p>
               <Link to={"/register"} >
-                <button className="hover:bg-[#43157e] ml-5 ts:mt-10 ts:w-60  duration-250 w-35 mt-8 ts:py-3 py-1 ts:text-[25px] text-[18px] text-white rounded-md cursor-pointer bg-[#330075] "> Get started</button>
+                <button className="hover:bg-[#43157e] ml-5 ls:mt-10 ls:w-60  duration-250 ts:w-45 w-35 mt-8 ls:py-3 ts:py-2 py-1 ts:text-[25px] text-[18px] text-white rounded-md cursor-pointer bg-[#330075] "> Get started</button>
               </Link>
           </div>
 

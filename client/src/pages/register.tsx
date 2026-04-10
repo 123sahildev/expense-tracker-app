@@ -2,7 +2,6 @@
 import EmailIcon from "../assets/svgs/email.tsx";
 import PasswordIcon from "../assets/svgs/password.tsx";
 import ConfirmPassword from "../assets/svgs/confirmPassword.tsx";
-// import PasswordShow from "../assets/svgs/passwordShow.tsx";
 import UserName from "../assets/svgs/username.tsx";
 import { Link } from "react-router-dom";
 import GoogleIcon from "../assets/svgs/googleIcon.tsx";
