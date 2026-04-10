@@ -13,10 +13,10 @@ export type LoginTypes = {
 }
 
 export type RegisterApiRequest = {
-    username: boolean,
+    username: string,
     email: string,
     password: string,
-    termsandconditions: boolean
+    termsandconditions?: boolean
 }
 
 export type RegisterApiData = {

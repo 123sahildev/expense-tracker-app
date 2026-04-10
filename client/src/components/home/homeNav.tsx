@@ -8,7 +8,7 @@ export default function homeNav({ setDropDown }: Props) {
     
   
   return (
-    <div className={` navShadow h-max max-w-screen min-w-screen absolute  z-50 flex flex-col py-5 bg-[#ffff] `}>
+    <div className={` navShadow h-max min-w-full absolute  z-50 flex flex-col py-5 bg-[#ffff] `}>
         <button className="absolute top-2 right-2 p-2 w-fit rounded-full active:bg-[#36363617]" onClick={() => setDropDown(false)}>
           <img className="h-4" src={navClose} alt="" />
         </button>
