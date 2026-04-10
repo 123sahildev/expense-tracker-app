@@ -27,7 +27,7 @@ export default function login() {
   return (
     <div className="w-screen h-screen py-10 flex flex-col items-center">
         <img src={appLogo} alt="" className="absolute ls:left-10 mx-auto h-6  top-4 left-3 ls:top-5 ls:h-10"/>
-      <form  onSubmit={handleSubmit(handleFormSubmit)}  className={` ${landForm ? "translate-y-0 opacity-100" : "translate-y-20 opacity-0"} duration-1000 flex transform navShadow outline outline-[#6e6d6d67] rounded-lg max-w-fit items-center flex-col mt-[calc(100vh-95vh)] ls:mt-[calc(100vh-90vh)] mx-auto bg-white ls:px-10 px-6 py-7 ls:py-10 `}>
+      <form  onSubmit={handleSubmit(handleFormSubmit)}  className={` ${landForm ? "translate-y-0 opacity-100" : "translate-y-20 opacity-0"} duration-1000 flex transform formShadow outline outline-[#6e6d6d67] rounded-lg max-w-fit items-center flex-col mt-[calc(100vh-95vh)] ls:mt-[calc(100vh-90vh)] mx-auto bg-white ls:px-10 px-6 py-7 ls:py-10 `}>
         <h1 className="text-[30px] font-bold font-[Arial] text-[#4d004d]">Welcome back!</h1>
         <div className=" flex flex-col gap-y-1.5 mt-5">
             <label htmlFor="username" className="ls:text-[20px] text-[15px] font-[Arial] ">Email</label>
