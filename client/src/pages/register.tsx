@@ -15,7 +15,7 @@ import { RegisterApiFunction } from "../utils/formFunctions.ts"
 
 export default function register() {
     const [landForm, setForm] = useState<boolean>(false);
-    const { register, handleSubmit, reset, formState : { errors }} = useForm<RegisterTypes>();
+    const { register, handleSubmit, formState : { errors }} = useForm<RegisterTypes>();
     const [hideShowPassword, setPassword] =  useState<boolean>(true);
     const [isPasswordMatched, setPasswordUnMatchedError] = useState<boolean>(false);
 
